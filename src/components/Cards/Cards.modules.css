@@ -1,0 +1,18 @@
+#cards-div {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando es necesario */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    color: black;
+}
+
+.card {
+    /* Añade estilos para las cards aquí según tus necesidades */
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    /* Otros estilos... */
+}
