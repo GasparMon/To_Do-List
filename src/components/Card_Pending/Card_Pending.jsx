@@ -1,26 +1,26 @@
 import { useDispatch, useSelector } from "react-redux";
-import { complete_todo, pending_done, pending_remove, process_todo, remove_todo } from "../../redux/action_types";
-import "../Card_Pending/Card_Pending.modules.css"
+import {
+  complete_todo,
+  pending_done,
+  pending_remove,
+  process_todo,
+  remove_todo,
+} from "../../redux/action_types";
+import "../Card_Pending/Card_Pending.modules.css";
 
 export default function Card_Pending(props) {
-
   const dispatch = useDispatch();
 
- 
   const hadleDelete = () => {
-  
     dispatch(pending_remove(props.id));
   };
 
   const handleComplete = () => {
-
-    dispatch(pending_done(props.id))
-  }
-
-
+    dispatch(pending_done(props.id));
+  };
 
   return (
-    <div class="card">
+    <div id={`card-${props.color}`}>
       <div class="card-name">{props.name}</div>
       <div class="quote">
         <svg
@@ -53,7 +53,6 @@ export default function Card_Pending(props) {
           <span class="material-symbols-outlined">dynamic_feed</span>
         )}
         <div id="type-title">
-         
           <span
             className="material-symbols-outlined"
             style={{
@@ -61,7 +60,7 @@ export default function Card_Pending(props) {
                 props.priority === "Low"
                   ? "green"
                   : props.priority === "Medium"
-                  ? "#FFD700" 
+                  ? "#FFD700"
                   : props.priority === "High"
                   ? "red"
                   : "black", // Color predeterminado si no coincide con ninguna prioridad
@@ -78,7 +77,9 @@ export default function Card_Pending(props) {
         </div>
         <div id="div-button">
           <button>
-            <span onClick={handleComplete} class="material-symbols-outlined">task_alt</span>
+            <span onClick={handleComplete} class="material-symbols-outlined">
+              task_alt
+            </span>
           </button>
           <button onClick={hadleDelete}>
             <span class="material-symbols-outlined">scan_delete</span>

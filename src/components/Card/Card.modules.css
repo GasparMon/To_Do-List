@@ -1,6 +1,7 @@
-.card {
+#card-Green {
   width: 350px;
   height: 264px;
+  background: rgb(183, 226, 25);
   font-family: inherit;
   position: relative;
   border-radius: 8px;
@@ -10,37 +11,17 @@
   box-shadow: 0.4rem 0.4rem #05060f;
   overflow: hidden;
   color: rgb(0, 0, 0);
+  margin: 10px;
 }
 
-.card.blue {
-  background: blue;
-}
-
-.card.red {
-  background: red;
-}
-
-.card.yellow {
-  background: yellow;
-}
-
-.card.pink {
-  background: pink;
-}
-
-.quote {
+#card-Green .quote {
   color: rgba(234, 252, 170, 0.377);
   padding-left: 30px;
   position: relative;
   top: 10px;
 }
 
-.quote svg {
-  width: 160px;
-  height: 160px;
-}
-
-.card-name {
+#card-Green .card-name {
   font-weight: 700;
   font-size: 30px;
   color: rgb(3, 3, 3);
@@ -56,7 +37,378 @@
   border: 0.5vmin solid #05060f;
   box-shadow: 0.4rem 0.4rem #05060f;
   overflow: hidden;
+  color: rgb(0, 0, 0);
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.331);
+}
+
+#card-Green .author {
+  opacity: 0;
+  transition: 0.5s;
+  height: 50px;
+  width: 90%;
+  background-color: #dff786ad;
+  border-radius: 10px;
+}
+
+#card-Green .author .pic {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(158, 196, 21);
+  border-radius: 50%;
+}
+
+#card-Green .author:hover {
+  opacity: 1;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.331);
+}
+
+#card-Green .author {
+  position: relative;
+  font-weight: 700;
+  color: rgb(127, 155, 29);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  height: 200px;
+  border-radius: 10px;
+  bottom: 150px;
+  background-color: #dff786;
+}
+
+#card-Blue {
+  width: 350px;
+  height: 264px;
+  background: rgb(25, 139, 226);
+  font-family: inherit;
+  position: relative;
+  border-radius: 8px;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  margin: 10px;
+}
+
+#card-Blue .quote {
+  color: rgba(170, 233, 252, 0.377);
+  padding-left: 30px;
+  position: relative;
+  top: 10px;
+}
+
+#card-Blue .card-name {
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(3, 3, 3);
+  line-height: 23px;
+  bottom: 60px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #86caf7;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.331);
+}
+
+#card-Blue .author {
+  opacity: 0;
+  transition: 0.5s;
+  height: 50px;
+  width: 90%;
+  background-color: #86caf7;
+  border-radius: 10px;
+}
+
+#card-Blue .author .pic {
+  width: 50px;
+  height: 50px;
+  background-color: #86caf7;
+  border-radius: 50%;
+}
+
+#card-Blue .author {
+  position: relative;
+  font-weight: 700;
+  color: #86caf7;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  height: 200px;
+  border-radius: 10px;
+  bottom: 150px;
+  background-color: #86caf7;
+}
+
+#card-Blue .author:hover {
+  opacity: 1;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.331);
+}
+
+#card-Red {
+  width: 350px;
+  height: 264px;
+  background: rgb(226, 75, 25);
+  font-family: inherit;
+  position: relative;
+  border-radius: 8px;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  margin: 10px;
+}
+
+#card-Red .quote {
+  color: rgba(252, 170, 170, 0.377);
+  padding-left: 30px;
+  position: relative;
+  top: 10px;
+}
+
+#card-Red .card-name {
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(3, 3, 3);
+  line-height: 23px;
+  bottom: 60px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f78686;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.331);
+}
+
+#card-Red .author {
+  opacity: 0;
+  transition: 0.5s;
+  height: 50px;
+  width: 90%;
+  background-color:#f78686;
+  border-radius: 10px;
+}
+
+#card-Red .author .pic {
+  width: 50px;
+  height: 50px;
+  background-color: #f78686;
+  border-radius: 50%;
+}
+
+#card-Red .author:hover {
+  opacity: 1;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.331);
+}
+
+#card-Red .author {
+  position: relative;
+  font-weight: 700;
+  color: #f78686;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  height: 200px;
+  border-radius: 10px;
+  bottom: 150px;
+  background-color: #f78686;
+}
+
+
+#card-Yellow {
+  width: 350px;
+  height: 264px;
+  background: rgb(226, 213, 25);
+  font-family: inherit;
+  position: relative;
+  border-radius: 8px;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  margin: 10px;
+}
+
+#card-Yellow .quote {
+  color: rgba(252, 244, 170, 0.377);
+  padding-left: 30px;
+  position: relative;
+  top: 10px;
+}
+
+#card-Yellow .card-name {
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(3, 3, 3);
+  line-height: 23px;
+  bottom: 60px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f786;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.331);
+}
+
+#card-Yellow .author {
+  opacity: 0;
+  transition: 0.5s;
+  height: 50px;
+  width: 90%;
+  background-color: #f7f786;
+  border-radius: 10px;
+}
+
+#card-Yellow .author .pic {
+  width: 50px;
+  height: 50px;
+  background-color: #f7f786;
+  border-radius: 50%;
+}
+
+#card-Yellow .author:hover {
+  opacity: 1;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.331);
+}
+
+#card-Yellow .author {
+  position: relative;
+  font-weight: 700;
+  color: #f7f786;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  height: 200px;
+  border-radius: 10px;
+  bottom: 150px;
+  background-color: #f7f786;
+}
+
+#card-Pink {
+  width: 350px;
+  height: 264px;
+  background: rgb(226, 25, 172);
+  font-family: inherit;
+  position: relative;
+  border-radius: 8px;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  margin: 10px;
+}
+
+#card-Pink .quote {
+  color: rgba(248, 170, 252, 0.377);
+  padding-left: 30px;
+  position: relative;
+  top: 10px;
+}
+
+#card-Pink .card-name {
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(3, 3, 3);
+  line-height: 23px;
+  bottom: 60px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f786f5;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.331);
+}
+
+#card-Pink .author {
+  opacity: 0;
+  transition: 0.5s;
+  height: 50px;
+  width: 90%;
+  background-color: #f786f5;
+  border-radius: 10px;
+}
+
+#card-Pink .author .pic {
+  width: 50px;
+  height: 50px;
+  background-color: #f786f5;
+  border-radius: 50%;
+}
+
+#card-Pink .author:hover {
+  opacity: 1;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.331);
+}
+
+#card-Pink .author {
+  position: relative;
+  font-weight: 700;
+  color: #f786f5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  height: 200px;
+  border-radius: 10px;
+  bottom: 150px;
+  background-color: #f786f5;
+}
+
+
+
+.quote svg {
+  width: 160px;
+  height: 160px;
 }
 
 .body-text {
@@ -76,50 +428,12 @@
   overflow-wrap: break-word;
 }
 
-.author {
-  opacity: 0;
-  transition: 0.5s;
-  height: 50px;
-  width: 90%;
-  background-color: #dff786ad;
-  border-radius: 10px;
-}
-
-.pic {
-  width: 50px;
-  height: 50px;
-  background-color: rgb(158, 196, 21);
-  border-radius: 50%;
-}
-
 .author-container {
   display: flex;
   align-items: center;
 }
 
-.author {
-  position: relative;
-  font-weight: 700;
-  color: rgb(127, 155, 29);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  opacity: 0;
-  transition: opacity 0.5s;
-  height: 200px;
-  border-radius: 10px;
-  bottom: 150px;
-  background-color: #dff786;
-}
-
-.author:hover {
-  opacity: 1;
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.331);
-}
-
-.card .author svg {
+.author svg {
   display: inline;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.452);
@@ -139,11 +453,9 @@
   transition: all ease-in-out 0.3s;
   cursor: pointer;
 }
-
 .author button:hover {
   transform: translateY(-3px);
 }
-
 .author span {
   font-size: 40px;
   font-weight: bolder;
@@ -173,3 +485,38 @@
   overflow-wrap: break-word;
 }
 
+.type-text .material-symbols-outlined {
+  position: relative;
+  bottom: 0px;
+  font-size: 120px;
+  color: #000000;
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 200, "opsz" 24;
+}
+
+#type-title {
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(3, 3, 3);
+  line-height: 23px;
+  bottom: 60px;
+  width: 80%;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.331);
+}
+
+#type-title .material-symbols-outlined {
+  position: relative;
+  bottom: 0px;
+  font-size: 30px;
+  margin: 0 10px 0;
+}

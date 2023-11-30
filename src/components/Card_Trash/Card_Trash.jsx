@@ -20,7 +20,7 @@ export default function Card_Trash(props) {
 
 
   return (
-    <div class="card">
+    <div id={`card-${props.color}`}>
       <div class="card-name">{props.name}</div>
       <div class="quote">
         <svg

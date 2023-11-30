@@ -10,9 +10,49 @@
 }
 
 .card {
-    /* Añade estilos para las cards aquí según tus necesidades */
+
     border: 2px solid black;
     margin: 10px;
     padding: 10px;
-    /* Otros estilos... */
+   
 }
+
+#form-title-land {
+    padding: 0;
+    width: 1200px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(5, 5, 5);
+    background: #64defb;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.5vmin solid #05060f;
+    box-shadow: 0.4rem 0.4rem #05060f;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+  }
+  
+  #form-title-land span {
+    font-size: 40px;
+    margin: 0 25px 0 0;
+  }
+
+  #main-landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgb(142, 142, 142);
+    font-size: 25px;
+  }
+
+  #main-landing span {
+    font-size: 50px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }

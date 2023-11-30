@@ -16,3 +16,25 @@
     padding: 10px;
     /* Otros estilos... */
 }
+
+#form-title-trash {
+    padding: 0;
+    width: 1200px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(5, 5, 5);
+    background: #ff7979;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.5vmin solid #05060f;
+    box-shadow: 0.4rem 0.4rem #05060f;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+  }
+  
+  #form-title-trash span {
+    font-size: 40px;
+    margin: 0 25px 0 0;
+  }

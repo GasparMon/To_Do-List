@@ -24,6 +24,11 @@ export default function Add(props) {
     color: "",
   });
 
+  const[errors, setErrors] = useState( {
+    name_errors:"",
+    info_errors:"",
+  })
+
   useEffect(() => {
 
     const uniqueId = generateUniqueId();
@@ -42,6 +47,7 @@ export default function Add(props) {
       name: event.target.value,
     });
   };
+
   const handleInfo = (event) => {
     setTodo({
       ...toDo,
@@ -79,8 +85,21 @@ export default function Add(props) {
     e.preventDefault();  
   
     if (!toDo.name || !toDo.info || !toDo.priority || !toDo.type || !toDo.color || !toDo.id) {
-      window.alert("Por favor, completa todos los campos.");
-    } else {
+      window.alert("Please fill in all the fields.");
+    } 
+    
+    if(toDo.name.length > 12){
+
+      window.alert("ToDo name exced maximum num of characters");
+    }
+
+    if(toDo.info.length > 110){
+
+      window.alert("ToDo info exced maximum num of characters");
+    }
+    
+    
+    else {
       dispatch(add_todo(toDo));
   
       setTodo({
@@ -112,7 +131,7 @@ export default function Add(props) {
           value={toDo.name}
           onChange={handleName}
         />
-      </div>
+        </div>
       <div class="div_inputs">
         <span class="material-symbols-outlined">description</span>
         <input
