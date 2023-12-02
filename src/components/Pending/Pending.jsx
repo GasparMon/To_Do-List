@@ -12,7 +12,7 @@ export default function Pending() {
       return (
         <div id="main-landing">
           <h1>
-            You don't have Pending To-Do's in your list{" "}
+            You don't have working on To-Do's in your list{" "}
             <span class="material-symbols-outlined">sentiment_satisfied</span>
           </h1>
           <h1>
@@ -29,7 +29,7 @@ export default function Pending() {
     <div id="cards-div">
       <div id="form-title-pending">
       <span class="material-symbols-outlined">pending_actions</span>
-      <h1>Pending To - Do's </h1>
+      <h1>Working on To - Do's </h1>
     </div>
     {landRender()}
       {myToDos.map((element) => (

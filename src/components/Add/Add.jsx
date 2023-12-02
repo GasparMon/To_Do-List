@@ -24,10 +24,7 @@ export default function Add(props) {
     color: "",
   });
 
-  const[errors, setErrors] = useState( {
-    name_errors:"",
-    info_errors:"",
-  })
+ 
 
   useEffect(() => {
 
@@ -88,7 +85,7 @@ export default function Add(props) {
       window.alert("Please fill in all the fields.");
     } 
     
-    if(toDo.name.length > 12){
+    if(toDo.name.length > 18){
 
       window.alert("ToDo name exced maximum num of characters");
     }
